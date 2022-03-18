@@ -11,7 +11,6 @@ class TableOfUsersViewController: UIViewController {
     
     var users: [User] = []
     
-    let apiController = APIController()
     let tableView = UITableView()
     
     override func viewDidLoad() {
@@ -26,12 +25,12 @@ class TableOfUsersViewController: UIViewController {
         tableView.delegate = self
         self.tableView.register(UsersInformationCell.self, forCellReuseIdentifier: UsersInformationCell.identifier)
 
-        apiController.getUsers() { result in
+        APIController.shared.getUsers() { [weak self] (result) in
             switch result {
             case .success(let user):
-                self.users = user
+                self?.users = user
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
+                    self?.tableView.reloadData()
                 }
             case .failure(let requestError):
                 switch requestError {

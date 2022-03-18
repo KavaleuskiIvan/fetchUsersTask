@@ -18,18 +18,21 @@ class UsersInformationViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    var userName: UILabel = {
+    
+    let userName: UILabel = {
         let label = UILabel()
         label.textColor = .white
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let userPhoto: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     // MARK: LowerView
     let lowerView: UIView = {
         let view = UIView()
@@ -37,6 +40,7 @@ class UsersInformationViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     // MARK: LeftStackView For LowerView
     let phoneLabel: UILabel = {
         let label = UILabel()
@@ -45,6 +49,7 @@ class UsersInformationViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let genderLabel: UILabel = {
         let label = UILabel()
         label.text = "gender:"
@@ -52,6 +57,7 @@ class UsersInformationViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let emailLabel: UILabel = {
         let label = UILabel()
         label.text = "email:"
@@ -59,6 +65,7 @@ class UsersInformationViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let nationalityLabel: UILabel = {
         let label = UILabel()
         label.text = "nationality:"
@@ -66,6 +73,7 @@ class UsersInformationViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let leftStackView: UIStackView = {
         let stackview = UIStackView()
         stackview.translatesAutoresizingMaskIntoConstraints = false
@@ -75,6 +83,7 @@ class UsersInformationViewController: UIViewController {
         stackview.spacing = 5
         return stackview
     }()
+    
     // MARK: RightStackView For LowerView
     let enteredPhoneLabel: UILabel = {
         let label = UILabel()
@@ -84,6 +93,7 @@ class UsersInformationViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let enteredGenderLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
@@ -92,6 +102,7 @@ class UsersInformationViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let enteredEmailLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
@@ -100,6 +111,7 @@ class UsersInformationViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let enteredNationalityLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
@@ -108,6 +120,7 @@ class UsersInformationViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let rightStackView: UIStackView = {
         let stackview = UIStackView()
         stackview.translatesAutoresizingMaskIntoConstraints = false

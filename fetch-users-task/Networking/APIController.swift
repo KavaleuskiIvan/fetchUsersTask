@@ -9,6 +9,10 @@ import Foundation
 
 class APIController {
     
+    static let shared = APIController()
+    
+    private init() {}
+    
     let urlString = "https://randomuser.me/api/?results=10"
 
     func getUsers(completion: @escaping (Result<[User], RequestError>) -> Void) {
