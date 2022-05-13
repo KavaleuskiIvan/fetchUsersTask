@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = navViewController
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
     }
 
     @available(iOS 13.0, *)

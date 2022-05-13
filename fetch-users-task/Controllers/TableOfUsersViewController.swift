@@ -12,9 +12,11 @@ class TableOfUsersViewController: UIViewController {
     var users: [User] = []
     
     let tableView = UITableView()
+    let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
         
         addSubviews()
         setupTableView()
@@ -24,8 +26,24 @@ class TableOfUsersViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.register(UsersInformationCell.self, forCellReuseIdentifier: UsersInformationCell.identifier)
-
-        APIController.shared.getUsers() { [weak self] (result) in
+        
+        gettingUsers()
+        
+        setupRefreshControl()
+    }
+    
+    func setupRefreshControl() {
+        tableView.refreshControl = refreshControl
+        refreshControl.attributedTitle = NSAttributedString(string: "Updating")
+        refreshControl.addTarget(self, action: #selector(updateTable), for: .valueChanged)
+    }
+    @objc func updateTable() {
+        gettingUsers()
+        refreshControl.endRefreshing()
+    }
+    
+    func gettingUsers() {
+        GettingUsersController.shared.getUsers() { [weak self] (result) in
             switch result {
             case .success(let user):
                 self?.users = user
@@ -71,5 +89,16 @@ extension TableOfUsersViewController: UITableViewDataSource, UITableViewDelegate
     }
 }
 
-
+private extension TableOfUsersViewController {
+    func addSubviews() {
+        view.addSubview(tableView)
+    }
+    func setupTableView() {
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+    }
+}
 

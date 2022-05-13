@@ -15,13 +15,9 @@
 		C8009E49279AC5A0006EF34A /* TableOfUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E48279AC5A0006EF34A /* TableOfUsersViewController.swift */; };
 		C8009E4D279AC9BB006EF34A /* UsersInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E4C279AC9BA006EF34A /* UsersInformationCell.swift */; };
 		C8009E4F279AD516006EF34A /* UsersInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E4E279AD516006EF34A /* UsersInformationViewController.swift */; };
-		C8009E53279AE2CA006EF34A /* UsersInformationViewControllerConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E52279AE2CA006EF34A /* UsersInformationViewControllerConstraints.swift */; };
-		C8009E61279C5E6E006EF34A /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E60279C5E6E006EF34A /* APIController.swift */; };
+		C8009E61279C5E6E006EF34A /* GettingUsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E60279C5E6E006EF34A /* GettingUsersController.swift */; };
 		C8009E64279C5EA8006EF34A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E63279C5EA8006EF34A /* Model.swift */; };
-		C8009E66279C61B2006EF34A /* UsersInformationCellConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E65279C61B2006EF34A /* UsersInformationCellConstraints.swift */; };
-		C8009E68279C6207006EF34A /* TableOfUsersViewControllerConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8009E67279C6207006EF34A /* TableOfUsersViewControllerConstraints.swift */; };
 		C8564104279C97B4003214D5 /* MapForUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8564103279C97B4003214D5 /* MapForUserViewController.swift */; };
-		C8564106279C9816003214D5 /* MapForUserViewControllerConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8564105279C9816003214D5 /* MapForUserViewControllerConstraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +31,9 @@
 		C8009E48279AC5A0006EF34A /* TableOfUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfUsersViewController.swift; sourceTree = "<group>"; };
 		C8009E4C279AC9BA006EF34A /* UsersInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInformationCell.swift; sourceTree = "<group>"; };
 		C8009E4E279AD516006EF34A /* UsersInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInformationViewController.swift; sourceTree = "<group>"; };
-		C8009E52279AE2CA006EF34A /* UsersInformationViewControllerConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInformationViewControllerConstraints.swift; sourceTree = "<group>"; };
-		C8009E60279C5E6E006EF34A /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		C8009E60279C5E6E006EF34A /* GettingUsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingUsersController.swift; sourceTree = "<group>"; };
 		C8009E63279C5EA8006EF34A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		C8009E65279C61B2006EF34A /* UsersInformationCellConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInformationCellConstraints.swift; sourceTree = "<group>"; };
-		C8009E67279C6207006EF34A /* TableOfUsersViewControllerConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfUsersViewControllerConstraints.swift; sourceTree = "<group>"; };
 		C8564103279C97B4003214D5 /* MapForUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapForUserViewController.swift; sourceTree = "<group>"; };
-		C8564105279C9816003214D5 /* MapForUserViewControllerConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapForUserViewControllerConstraints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +70,6 @@
 				C8009E5F279C5E57006EF34A /* Networking */,
 				C8009E50279AD54A006EF34A /* Cells */,
 				C8009E4B279AC5B1006EF34A /* Controllers */,
-				C8009E4A279AC5A5006EF34A /* Constraints */,
 				C8009E34279AC1ED006EF34A /* AppDelegate.swift */,
 				C8009E36279AC1ED006EF34A /* SceneDelegate.swift */,
 				C8009E3A279AC1ED006EF34A /* Main.storyboard */,
@@ -87,17 +78,6 @@
 				C8009E42279AC1EF006EF34A /* Info.plist */,
 			);
 			path = "fetch-users-task";
-			sourceTree = "<group>";
-		};
-		C8009E4A279AC5A5006EF34A /* Constraints */ = {
-			isa = PBXGroup;
-			children = (
-				C8009E67279C6207006EF34A /* TableOfUsersViewControllerConstraints.swift */,
-				C8009E52279AE2CA006EF34A /* UsersInformationViewControllerConstraints.swift */,
-				C8009E65279C61B2006EF34A /* UsersInformationCellConstraints.swift */,
-				C8564105279C9816003214D5 /* MapForUserViewControllerConstraints.swift */,
-			);
-			path = Constraints;
 			sourceTree = "<group>";
 		};
 		C8009E4B279AC5B1006EF34A /* Controllers */ = {
@@ -121,7 +101,7 @@
 		C8009E5F279C5E57006EF34A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				C8009E60279C5E6E006EF34A /* APIController.swift */,
+				C8009E60279C5E6E006EF34A /* GettingUsersController.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -210,13 +190,9 @@
 				C8009E35279AC1ED006EF34A /* AppDelegate.swift in Sources */,
 				C8009E4F279AD516006EF34A /* UsersInformationViewController.swift in Sources */,
 				C8009E49279AC5A0006EF34A /* TableOfUsersViewController.swift in Sources */,
-				C8009E61279C5E6E006EF34A /* APIController.swift in Sources */,
-				C8009E66279C61B2006EF34A /* UsersInformationCellConstraints.swift in Sources */,
+				C8009E61279C5E6E006EF34A /* GettingUsersController.swift in Sources */,
 				C8009E37279AC1ED006EF34A /* SceneDelegate.swift in Sources */,
-				C8009E68279C6207006EF34A /* TableOfUsersViewControllerConstraints.swift in Sources */,
 				C8009E4D279AC9BB006EF34A /* UsersInformationCell.swift in Sources */,
-				C8009E53279AE2CA006EF34A /* UsersInformationViewControllerConstraints.swift in Sources */,
-				C8564106279C9816003214D5 /* MapForUserViewControllerConstraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,12 +344,12 @@
 				DEVELOPMENT_TEAM = DNWTGQUU5Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "fetch-users-task/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To determine your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,12 +373,12 @@
 				DEVELOPMENT_TEAM = DNWTGQUU5Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "fetch-users-task/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To determine your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

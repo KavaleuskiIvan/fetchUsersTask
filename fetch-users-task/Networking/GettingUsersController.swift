@@ -1,5 +1,5 @@
 //
-//  APIController.swift
+//  GettingUsersController.swift
 //  fetch-users-task
 //
 //  Created by Kavaleuski Ivan on 22/01/2022.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-class APIController {
+class GettingUsersController {
     
-    static let shared = APIController()
+    static let shared = GettingUsersController()
     
     private init() {}
     
@@ -20,12 +20,12 @@ class APIController {
             completion(.failure(.invalidUrl))
             return
         }
-        URLSession.shared.dataTask(with: url) { data, response , error in
+        URLSession.shared.dataTask(with: url) { data, _ , error in
             if error != nil {
                 completion(.failure(.failedRequest))
                 return
             }
-            else if let data = data {
+            if let data = data {
                 do {
                     let newUser = try JSONDecoder().decode(Model.self, from: data)
                     completion(.success(newUser.results))
